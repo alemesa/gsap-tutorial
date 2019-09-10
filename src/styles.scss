@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 50px;
+}
+
+code {
+  font-family: "Operator Mono";
+}
+
+.Box {
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.Box:nth-of-type(6n + 1) {
+  background-color: #ff3d00;
+}
+
+.Box:nth-of-type(6n + 2) {
+  background-color: #03a9f4;
+}
+
+.Box:nth-of-type(6n + 3) {
+  background-color: #00e676;
+  color: #212121;
+}
+
+.Box:nth-of-type(6n + 4) {
+  background-color: #212121;
+}
+
+.Box:nth-of-type(6n + 5) {
+  background-color: #ffeb3b;
+  color: #212121;
+}
+
+.Box:nth-of-type(6n + 6) {
+  background-color: #6a1b9a;
+}
+
+h2 {
+  margin-top: 5rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 5px 10px;
+  display: block;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #212121;
+}

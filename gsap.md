@@ -1,7 +1,3 @@
-# gsap-tutorial
-
-GSAP Coding Presentation for new interns
-
 ## Good resources
 
 GSAP is framework agnostic
