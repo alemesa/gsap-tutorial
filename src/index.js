@@ -16,14 +16,14 @@ function App() {
     return (
         <div className="App">
             <h1>GSAP Live Intro</h1>
-            {/* <To />
-      <FromTo />
-      <WithEase />
-      <Transform />
-      <OnComplete /> */}
+            <To />
+            <FromTo />
+            <WithEase />
+            <Transform />
+            <OnComplete />
             <Timeline />
-            {/* <TimelineControl />
-      <Stagger /> */}
+            <TimelineControl />
+            <Stagger />
         </div>
     );
 }
