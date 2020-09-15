@@ -13,19 +13,19 @@ import Stagger from "./lessons/stagger";
 import "./styles.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>GSAP Live Intro</h1>
-      <To />
+    return (
+        <div className="App">
+            <h1>GSAP Live Intro</h1>
+            {/* <To />
       <FromTo />
       <WithEase />
       <Transform />
-      <OnComplete />
-      <Timeline />
-      <TimelineControl />
-      <Stagger />
-    </div>
-  );
+      <OnComplete /> */}
+            <Timeline />
+            {/* <TimelineControl />
+      <Stagger /> */}
+        </div>
+    );
 }
 
 const rootElement = document.getElementById("root");
