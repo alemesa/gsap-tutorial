@@ -5,10 +5,8 @@ function Stagger() {
     useEffect(() => {
         gsap.fromTo(
             ".Stagger",
-            1,
-            { autoAlpha: 0 },
-            { x: 200, y: 100, delay: 0.5, autoAlpha: 1 },
-            0.05
+            { duration: 1, autoAlpha: 0 },
+            { x: 200, y: 100, delay: 0.5, autoAlpha: 1, stagger: 0.05 }
         );
     }, []);
 

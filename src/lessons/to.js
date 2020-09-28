@@ -3,8 +3,13 @@ import { gsap } from "gsap";
 
 function To() {
     useEffect(() => {
-        gsap.to(".Box1", 1, { x: 200, delay: 0.5, ease: "power3.inOut" });
-        gsap.to(".Box2", 0.2, { x: 200 });
+        gsap.to(".Box1", {
+            duration: 1,
+            x: 200,
+            delay: 0.5,
+            ease: "power3.inOut"
+        });
+        gsap.to(".Box2", { duration: 0.2, x: 200 });
     }, []);
 
     return (

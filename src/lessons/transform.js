@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 
 function Transform() {
     useEffect(() => {
-        gsap.to(".Box7", 1, {
+        gsap.to(".Box7", {
+            duration: 1,
             x: 200,
             xPercent: 50,
             delay: 0.5,

@@ -10,7 +10,7 @@ function FromTo() {
             {
                 x: 100,
                 delay: 2,
-                immediateRender: true,
+                // immediateRender: true,
                 backgroundColor: "#1565C0"
             }
         );

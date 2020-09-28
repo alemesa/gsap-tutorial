@@ -10,8 +10,7 @@ function WithEase() {
 
         gsap.fromTo(
             Box6.current,
-            1,
-            { x: 10 },
+            { duration: 1, x: 10 },
             { x: 300, delay: 1, ease: sampleBezier }
         );
     }, []);

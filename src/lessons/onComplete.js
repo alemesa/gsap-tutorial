@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 
 function OnComplete() {
     useEffect(() => {
-        gsap.to(".Box8", 1, {
+        gsap.to(".Box8", {
+            duration: 1,
             x: 200,
             xPercent: 50,
             delay: 0.5,
@@ -18,8 +19,7 @@ function OnComplete() {
         console.log("1st Animation is Done");
         gsap.fromTo(
             ".Box9",
-            1,
-            { x: 0, scale: 0.3 },
+            { duration: 1, x: 0, scale: 0.3 },
             {
                 x: 400,
                 xPercent: 50,

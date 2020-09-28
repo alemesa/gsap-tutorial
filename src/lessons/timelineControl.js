@@ -7,10 +7,10 @@ function TimelineControl() {
     useEffect(() => {
         animationTimeline.current = gsap
             .timeline({ paused: true })
-            .to(".Box13", 0.6, { x: 150 }, 0)
-            .to(".Box14", 0.6, { x: 200 }, "-=0.6")
-            .to(".Box15", 0.6, { x: 250 }, "-=0.2")
-            .to(".Box16", 0.6, { x: 250 }, "+=0.4");
+            .to(".Box13", { duration: 0.6, x: 150 }, 0)
+            .to(".Box14", { duration: 0.6, x: 200 }, "-=0.6")
+            .to(".Box15", { duration: 0.6, x: 250 }, "-=0.2")
+            .to(".Box16", { duration: 0.6, x: 250 }, "+=0.4");
     }, []);
 
     function play() {
@@ -19,6 +19,10 @@ function TimelineControl() {
 
     function reverse() {
         animationTimeline.current.timeScale(2).reverse();
+    }
+
+    function pause() {
+        animationTimeline.current.pause();
     }
 
     function resume() {
@@ -50,6 +54,7 @@ function TimelineControl() {
             <div className="Box Box16">16</div>
             <button onClick={() => play()}>Play</button>
             <button onClick={() => reverse()}>Reverse</button>
+            <button onClick={() => pause()}>Pause</button>
             <button onClick={() => resume()}>Resume</button>
             <button onClick={() => seek()}>Seek to second 1</button>
             <button onClick={() => progress()}>Progress to second 1</button>
