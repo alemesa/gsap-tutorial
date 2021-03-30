@@ -9,6 +9,7 @@ import OnComplete from "./lessons/onComplete";
 import Timeline from "./lessons/timeline";
 import TimelineControl from "./lessons/timelineControl";
 import Stagger from "./lessons/stagger";
+import OnScroll from "./lessons/onScroll";
 
 import "./styles.scss";
 
@@ -24,6 +25,9 @@ function App() {
             <Timeline />
             <TimelineControl />
             <Stagger />
+            <div style={{ height: 400 }}></div>
+            <OnScroll />
+            <div style={{ height: 400 }}></div>
         </div>
     );
 }

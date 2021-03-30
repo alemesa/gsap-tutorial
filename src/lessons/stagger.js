@@ -6,7 +6,7 @@ function Stagger() {
         gsap.fromTo(
             ".Stagger",
             { duration: 1, autoAlpha: 0 },
-            { x: 200, y: 100, delay: 0.5, autoAlpha: 1, stagger: 0.05 }
+            { x: 200, y: 50, delay: 0.5, autoAlpha: 1, stagger: 0.05 }
         );
     }, []);
 
