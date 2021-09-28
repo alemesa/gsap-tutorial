@@ -10,8 +10,13 @@ import Timeline from "./lessons/timeline";
 import TimelineControl from "./lessons/timelineControl";
 import Stagger from "./lessons/stagger";
 import OnScroll from "./lessons/onScroll";
+import ReuseEffects from "./lessons/reuseEffects";
 
 import "./styles.scss";
+
+import { registerGSAPeffects } from "./effects";
+
+registerGSAPeffects();
 
 function App() {
     return (
@@ -25,9 +30,10 @@ function App() {
             <Timeline />
             <TimelineControl />
             <Stagger />
-            <div style={{ height: 400 }}></div>
+            <div style={{ height: 800 }}></div>
             <OnScroll />
-            <div style={{ height: 400 }}></div>
+            <div style={{ height: 800 }}></div>
+            <ReuseEffects />
         </div>
     );
 }
