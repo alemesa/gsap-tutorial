@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 function FromTo() {
     useEffect(() => {
         gsap.set(".Box4", { backgroundColor: "#212121" });
+       
         gsap.fromTo(
             ".Box4",
             { duration: 1, x: 50 },
@@ -14,10 +15,11 @@ function FromTo() {
                 backgroundColor: "#1565C0"
             }
         );
+       
         gsap.fromTo(
             ".Box5",
             { duration: 1, x: 50 },
-            { x: 100, delay: 2, immediateRender: false }
+            { x: 100, delay: 2, immediateRender: true }
         );
     }, []);
 

@@ -30,10 +30,20 @@ function Timeline() {
         //     .to(".Box12", { duration: 1, x: 150 }, "<");
 
         // With Options
-        gsap.timeline({ repeat: 3, repeatDelay: 1, yoyo: true })
-            .to(".Box10", { duration: 0.6, x: 150 }, "+=0.6")
-            .to(".Box11", { duration: 0.6, x: 200 }, "-=0.6")
-            .to(".Box12", { duration: 0.6, x: 250 }, "-=0.2");
+        // gsap.timeline({ repeat: 3, repeatDelay: 1, yoyo: true })
+        //     .to(".Box10", { duration: 0.6, x: 150 }, "+=0.6")
+        //     .to(".Box11", { duration: 0.6, x: 200 }, "-=0.6")
+        //     .to(".Box12", { duration: 0.6, x: 250 }, "-=0.2");
+
+        // With defaults
+        gsap.timeline({
+            defaults: {
+                x: 150
+            }
+        })
+            .to(".Box10", { duration: 0.6 }, "+=0.6")
+            .to(".Box11", { duration: 0.6 }, "-=0.6")
+            .to(".Box12", { duration: 0.6 }, "-=0.2");
     }, []);
 
     return (

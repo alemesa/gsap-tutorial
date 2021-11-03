@@ -9,6 +9,7 @@ function To() {
             delay: 0.5,
             ease: "power3.inOut"
         });
+
         gsap.to(".Box2", { duration: 0.2, x: 200 });
     }, []);
 

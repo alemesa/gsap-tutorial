@@ -12,7 +12,7 @@ import Stagger from "./lessons/stagger";
 import OnScroll from "./lessons/onScroll";
 import ReuseEffects from "./lessons/reuseEffects";
 
-import "./styles.scss";
+import "./styles.css";
 
 import { registerGSAPeffects } from "./effects";
 
@@ -22,18 +22,18 @@ function App() {
     return (
         <div className="App">
             <h1>GSAP Live Intro</h1>
-            <To />
-            <FromTo />
-            <WithEase />
-            <Transform />
-            <OnComplete />
-            <Timeline />
-            <TimelineControl />
-            <Stagger />
+            {/* <To /> */}
+            {/* <FromTo /> */}
+            {/* <WithEase /> */}
+            {/* <Transform /> */}
+            {/* <OnComplete /> */}
+            {/* <Timeline />
+            <TimelineControl /> */}
+            {/* <Stagger /> */}
             <div style={{ height: 800 }}></div>
-            <OnScroll />
+            {/* <OnScroll /> */}
             <div style={{ height: 800 }}></div>
-            <ReuseEffects />
+            {/* <ReuseEffects /> */}
         </div>
     );
 }
