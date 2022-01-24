@@ -7,9 +7,11 @@ export function registerGSAPeffects() {
             return gsap.from(targets, {
                 duration: config.duration,
                 autoAlpha: 0,
-                y: 100
+                y: 100,
+                delay: config.delay
             });
         },
-        defaults: { duration: 2 }
+        defaults: { duration: 2, delay: 0 },
+        extendTimeline: true,
     });
 }
